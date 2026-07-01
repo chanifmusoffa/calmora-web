@@ -11,20 +11,11 @@
                 extend: {
                     colors: {
                         cinnamon: {
-                            50: '#fdf8f5',
-                            100: '#f9eee7',
-                            200: '#f1dcd0',
-                            300: '#e5c2b0',
-                            400: '#d59e86',
-                            500: '#c88164',
-                            600: '#bc694d',
-                            700: '#9d533e',
-                            800: '#814535',
-                            900: '#683a2e',
+                            50: '#fdf8f5', 100: '#f9eee7', 200: '#f1dcd0',
+                            300: '#e5c2b0', 400: '#d59e86', 500: '#c88164',
+                            600: '#bc694d', 700: '#9d533e', 800: '#814535', 900: '#683a2e',
                         },
-                        leaf: {
-                            500: '#6B8E23',
-                        }
+                        leaf: { 500: '#6B8E23' }
                     }
                 }
             }
@@ -39,7 +30,6 @@
 </head>
 <body class="bg-cinnamon-50 text-gray-800 font-sans antialiased flex flex-col md:flex-row min-h-screen">
 
-    <!-- MOBILE NAVBAR -->
     <div class="md:hidden flex items-center justify-between bg-white p-4 shadow-sm sticky top-0 z-50">
         <div class="font-bold text-xl text-cinnamon-800 tracking-wider">CALMORA</div>
         <button id="menu-btn" class="text-cinnamon-800 focus:outline-none">
@@ -49,7 +39,6 @@
         </button>
     </div>
 
-    <!-- SIDEBAR -->
     <aside id="sidebar" class="fixed inset-y-0 left-0 z-40 w-64 bg-white shadow-xl transform -translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out md:static md:h-screen md:sticky md:top-0">
         <div class="p-6 h-full flex flex-col">
             <div class="hidden md:block mb-10">
@@ -64,31 +53,24 @@
                 <a href="#testimonials" class="block px-4 py-3 rounded-xl text-sm font-medium text-gray-600 hover:bg-cinnamon-100 hover:text-cinnamon-800 transition">Testimonials</a>
                 <a href="#team" class="block px-4 py-3 rounded-xl text-sm font-medium text-gray-600 hover:bg-cinnamon-100 hover:text-cinnamon-800 transition">Our Team</a>
             </nav>
-
             <div class="mt-auto pt-6 border-t border-gray-100">
                 <p class="text-xs text-gray-400">&copy; 2026 CALMORA Team.</p>
             </div>
         </div>
     </aside>
 
-    <!-- MAIN CONTENT -->
     <main class="flex-1 overflow-x-hidden">
         
-        <!-- 1. HERO SECTION -->
         <section id="home" class="relative pt-16 pb-20 md:pt-24 md:pb-32 px-6 lg:px-16 flex flex-col items-center text-center bg-gradient-to-b from-cinnamon-100 to-cinnamon-50">
             <span class="text-cinnamon-700 font-bold text-xs tracking-widest uppercase rounded-full bg-white px-4 py-1.5 shadow-sm border border-cinnamon-200 mb-6">100% Natural Ingredients</span>
             <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
                 Sip the Harmony of <br> <span class="text-cinnamon-600">Health & Nature</span>
             </h2>
             
-            <div class="relative w-full max-w-2xl mt-8 mb-10">
-                <div class="absolute inset-0 bg-leaf-500 rounded-3xl transform rotate-3 opacity-20"></div>
-                <div class="relative w-full h-64 md:h-96 bg-white rounded-3xl border border-gray-100 shadow-2xl flex items-center justify-center text-cinnamon-300 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1597481499750-3e6b22637e12?auto=format&fit=crop&w=800&q=80" alt="CALMORA Herbal Tea" class="w-full h-full object-cover opacity-80 mix-blend-multiply">
-                    <div class="absolute inset-0 flex items-center justify-center">
-                        <span class="bg-white/80 px-4 py-2 rounded-lg font-semibold text-gray-700 backdrop-blur-sm">[ Replace with CALMORA Product Photo ]</span>
-                    </div>
-                </div>
+            <div class="relative w-full max-w-2xl mt-8 mb-16 flex justify-center items-center">
+                <div class="absolute inset-0 bg-cinnamon-300 rounded-full blur-3xl opacity-30 transform scale-75"></div>
+                
+                <img src="hero-calmora.png" alt="CALMORA Herbal Tea" class="relative z-10 w-full max-w-md md:max-w-lg rounded-3xl drop-shadow-2xl border-4 border-white transition duration-500 hover:scale-105">
             </div>
 
             <a href="#testimonials" class="bg-cinnamon-600 text-white font-bold py-4 px-8 rounded-xl shadow-lg shadow-cinnamon-300 hover:bg-cinnamon-700 hover:shadow-xl transition-all transform hover:-translate-y-1">
@@ -96,58 +78,31 @@
             </a>
         </section>
 
-        <!-- 2. ABOUT SECTION -->
         <section id="about" class="px-6 py-20 lg:px-16 bg-white">
             <div class="max-w-4xl mx-auto">
                 <h3 class="text-sm font-bold text-leaf-500 tracking-widest uppercase mb-2">Introduction</h3>
                 <h2 class="text-3xl font-bold text-gray-900 mb-8">What is CALMORA?</h2>
-                
                 <div class="space-y-6 text-gray-600 leading-relaxed text-lg">
-                    <p>
-                        <strong class="text-cinnamon-700">CALMORA</strong> is an innovative herbal tea made from a combination of corn silk, bay leaves, and cinnamon—natural ingredients rich in bioactive compounds that offer a range of potential health benefits. Corn silk, which has long been considered agricultural waste, is repurposed as the main ingredient, thereby adding value while supporting the concept of sustainability. Combined with bay leaves and cinnamon known for their high antioxidant content, CALMORA offers a practical, natural, and eco-friendly alternative for a healthy beverage.
-                    </p>
-                    <p>
-                        Amid growing public awareness of healthy lifestyles and the consumption of natural products, CALMORA offers a solution in the form of a herbal beverage that not only has a distinctive taste and soothing aroma but also contributes to reducing agricultural waste. By championing the concepts of health and sustainability, CALMORA is expected to become an innovative product that benefits consumers while creating economic value through the utilization of local resources.
-                    </p>
+                    <p><strong class="text-cinnamon-700">CALMORA</strong> is an innovative herbal tea made from a combination of corn silk, bay leaves, and cinnamon—natural ingredients rich in bioactive compounds that offer a range of potential health benefits. Corn silk, which has long been considered agricultural waste, is repurposed as the main ingredient, thereby adding value while supporting the concept of sustainability. Combined with bay leaves and cinnamon known for their high antioxidant content, CALMORA offers a practical, natural, and eco-friendly alternative for a healthy beverage.</p>
+                    <p>Amid growing public awareness of healthy lifestyles and the consumption of natural products, CALMORA offers a solution in the form of a herbal beverage that not only has a distinctive taste and soothing aroma but also contributes to reducing agricultural waste. By championing the concepts of health and sustainability, CALMORA is expected to become an innovative product that benefits consumers while creating economic value through the utilization of local resources.</p>
                 </div>
             </div>
         </section>
 
-        <!-- 3. BENEFITS SECTION -->
         <section id="benefits" class="px-6 py-20 lg:px-16 bg-cinnamon-50">
             <div class="max-w-5xl mx-auto">
                 <div class="text-center mb-16">
                     <h3 class="text-sm font-bold text-leaf-500 tracking-widest uppercase mb-2">Health & Impact</h3>
                     <h2 class="text-3xl font-bold text-gray-900">CALMORA Benefits</h2>
                 </div>
-
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-cinnamon-100 hover:shadow-md transition">
-                        <div class="w-12 h-12 bg-cinnamon-100 text-cinnamon-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">🛡️</div>
-                        <p class="text-sm text-gray-700 font-medium">Helps meet the body’s need for natural antioxidants to combat free radicals.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-cinnamon-100 hover:shadow-md transition">
-                        <div class="w-12 h-12 bg-cinnamon-100 text-cinnamon-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">🩸</div>
-                        <p class="text-sm text-gray-700 font-medium">May help maintain blood sugar levels due to the active compounds found in corn silk, bay leaves, and cinnamon.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-cinnamon-100 hover:shadow-md transition">
-                        <div class="w-12 h-12 bg-cinnamon-100 text-cinnamon-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">💧</div>
-                        <p class="text-sm text-gray-700 font-medium">Helps support urinary tract function through the natural diuretic properties of corn silk.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-cinnamon-100 hover:shadow-md transition">
-                        <div class="w-12 h-12 bg-cinnamon-100 text-cinnamon-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">❤️</div>
-                        <p class="text-sm text-gray-700 font-medium">Helps maintain heart health and supports stable blood pressure.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-cinnamon-100 hover:shadow-md transition">
-                        <div class="w-12 h-12 bg-cinnamon-100 text-cinnamon-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">🌿</div>
-                        <p class="text-sm text-gray-700 font-medium">Serves as a natural herbal beverage alternative free of preservatives and synthetic dyes.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-cinnamon-100 hover:shadow-md transition">
-                        <div class="w-12 h-12 bg-leaf-500/20 text-leaf-500 rounded-xl flex items-center justify-center text-xl font-bold mb-4">♻️</div>
-                        <p class="text-sm text-gray-700 font-medium">Supports efforts to reduce agricultural waste by utilizing corn silk as the primary raw material.</p>
-                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-cinnamon-100"><div class="w-12 h-12 bg-cinnamon-100 text-cinnamon-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">🛡️</div><p class="text-sm text-gray-700 font-medium">Helps meet the body’s need for natural antioxidants to combat free radicals.</p></div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-cinnamon-100"><div class="w-12 h-12 bg-cinnamon-100 text-cinnamon-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">🩸</div><p class="text-sm text-gray-700 font-medium">May help maintain blood sugar levels due to the active compounds found in corn silk, bay leaves, and cinnamon.</p></div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-cinnamon-100"><div class="w-12 h-12 bg-cinnamon-100 text-cinnamon-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">💧</div><p class="text-sm text-gray-700 font-medium">Helps support urinary tract function through the natural diuretic properties of corn silk.</p></div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-cinnamon-100"><div class="w-12 h-12 bg-cinnamon-100 text-cinnamon-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">❤️</div><p class="text-sm text-gray-700 font-medium">Helps maintain heart health and supports stable blood pressure.</p></div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-cinnamon-100"><div class="w-12 h-12 bg-cinnamon-100 text-cinnamon-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">🌿</div><p class="text-sm text-gray-700 font-medium">Serves as a natural herbal beverage alternative free of preservatives and synthetic dyes.</p></div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-cinnamon-100"><div class="w-12 h-12 bg-leaf-500/20 text-leaf-500 rounded-xl flex items-center justify-center text-xl font-bold mb-4">♻️</div><p class="text-sm text-gray-700 font-medium">Supports efforts to reduce agricultural waste by utilizing corn silk as the primary raw material.</p></div>
                 </div>
-
                 <div class="mt-6 bg-gradient-to-r from-cinnamon-700 to-cinnamon-600 text-white p-8 rounded-2xl shadow-lg flex items-center md:flex-row flex-col text-center md:text-left gap-6">
                     <div class="text-4xl">🤝</div>
                     <div>
@@ -158,114 +113,39 @@
             </div>
         </section>
 
-        <!-- 4. TESTIMONIALS SECTION -->
         <section id="testimonials" class="px-6 py-24 lg:px-16 bg-white">
             <div class="max-w-6xl mx-auto">
                 <div class="text-center mb-16">
                     <h3 class="text-sm font-bold text-cinnamon-600 tracking-widest uppercase mb-2">Real Stories</h3>
                     <h2 class="text-3xl font-bold text-gray-900 mb-4">What Our Customers Say</h2>
-                    <p class="text-gray-500 max-w-2xl mx-auto">Discover how CALMORA has brought relaxation and health benefits into the daily lives of our community.</p>
                 </div>
-
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
-                    <!-- Testimonial 1 -->
-                    <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 relative shadow-sm">
-                        <div class="text-6xl text-cinnamon-200 absolute top-4 right-6 font-serif">"</div>
-                        <div class="flex text-yellow-400 text-sm mb-4">★★★★★</div>
-                        <p class="text-gray-600 italic mb-8 relative z-10">"The combination of corn silk and cinnamon is unexpectedly brilliant. It has a soothing aroma and makes me feel relaxed after a long day at work. Highly recommended!"</p>
-                        <div class="flex items-center gap-4 mt-auto">
-                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&q=80" alt="Sarah J." class="w-12 h-12 rounded-full object-cover shadow-sm">
-                            <div>
-                                <h4 class="font-bold text-sm text-gray-900">Sarah J.</h4>
-                                <p class="text-xs text-gray-500">Health Enthusiast</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 2 -->
-                    <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 relative shadow-sm">
-                        <div class="text-6xl text-cinnamon-200 absolute top-4 right-6 font-serif">"</div>
-                        <div class="flex text-yellow-400 text-sm mb-4">★★★★★</div>
-                        <p class="text-gray-600 italic mb-8 relative z-10">"I love the fact that it's eco-friendly and uses repurposed ingredients. Not to mention, it really helps calm my nerves and feels great for digestion."</p>
-                        <div class="flex items-center gap-4 mt-auto">
-                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Michael T." class="w-12 h-12 rounded-full object-cover shadow-sm">
-                            <div>
-                                <h4 class="font-bold text-sm text-gray-900">Michael T.</h4>
-                                <p class="text-xs text-gray-500">Daily Consumer</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 3 -->
-                    <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 relative shadow-sm">
-                        <div class="text-6xl text-cinnamon-200 absolute top-4 right-6 font-serif">"</div>
-                        <div class="flex text-yellow-400 text-sm mb-4">★★★★★</div>
-                        <p class="text-gray-600 italic mb-8 relative z-10">"A perfect alternative to sugary drinks. The bay leaves add a unique twist that I didn't know I needed. It's now a staple in my morning routine!"</p>
-                        <div class="flex items-center gap-4 mt-auto">
-                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" alt="Elena R." class="w-12 h-12 rounded-full object-cover shadow-sm">
-                            <div>
-                                <h4 class="font-bold text-sm text-gray-900">Elena R.</h4>
-                                <p class="text-xs text-gray-500">Yoga Instructor</p>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 relative shadow-sm"><div class="text-6xl text-cinnamon-200 absolute top-4 right-6 font-serif">"</div><div class="flex text-yellow-400 text-sm mb-4">★★★★★</div><p class="text-gray-600 italic mb-8 relative z-10">"The combination of corn silk and cinnamon is unexpectedly brilliant. It has a soothing aroma and makes me feel relaxed after a long day at work. Highly recommended!"</p><div class="flex items-center gap-4 mt-auto"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&q=80" alt="Sarah J." class="w-12 h-12 rounded-full object-cover shadow-sm"><div><h4 class="font-bold text-sm text-gray-900">Sarah J.</h4><p class="text-xs text-gray-500">Health Enthusiast</p></div></div></div>
+                    <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 relative shadow-sm"><div class="text-6xl text-cinnamon-200 absolute top-4 right-6 font-serif">"</div><div class="flex text-yellow-400 text-sm mb-4">★★★★★</div><p class="text-gray-600 italic mb-8 relative z-10">"I love the fact that it's eco-friendly and uses repurposed ingredients. Not to mention, it really helps calm my nerves and feels great for digestion."</p><div class="flex items-center gap-4 mt-auto"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Michael T." class="w-12 h-12 rounded-full object-cover shadow-sm"><div><h4 class="font-bold text-sm text-gray-900">Michael T.</h4><p class="text-xs text-gray-500">Daily Consumer</p></div></div></div>
+                    <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 relative shadow-sm"><div class="text-6xl text-cinnamon-200 absolute top-4 right-6 font-serif">"</div><div class="flex text-yellow-400 text-sm mb-4">★★★★★</div><p class="text-gray-600 italic mb-8 relative z-10">"A perfect alternative to sugary drinks. The bay leaves add a unique twist that I didn't know I needed. It's now a staple in my morning routine!"</p><div class="flex items-center gap-4 mt-auto"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" alt="Elena R." class="w-12 h-12 rounded-full object-cover shadow-sm"><div><h4 class="font-bold text-sm text-gray-900">Elena R.</h4><p class="text-xs text-gray-500">Yoga Instructor</p></div></div></div>
                 </div>
             </div>
         </section>
 
-        <!-- 5. TEAM SECTION -->
         <section id="team" class="px-6 py-20 lg:px-16 bg-gray-900 text-white">
             <div class="max-w-5xl mx-auto text-center">
                 <h3 class="text-sm font-bold text-cinnamon-400 tracking-widest uppercase mb-2">Behind The Product</h3>
                 <h2 class="text-3xl font-bold mb-12">Meet Our Team</h2>
-                
                 <div class="flex flex-wrap justify-center gap-8">
-                    <!-- Team Member 1 -->
-                    <div class="w-40 flex flex-col items-center">
-                        <div class="w-24 h-24 bg-gray-800 rounded-full border-2 border-cinnamon-500 mb-4 overflow-hidden">
-                            <img src="https://ui-avatars.com/api/?name=Team+A&background=random" alt="Team 1" class="w-full h-full object-cover">
-                        </div>
-                        <h4 class="font-bold text-sm">Team Member 1</h4>
-                        <p class="text-xs text-gray-400">Role / Position</p>
-                    </div>
-                    <!-- Team Member 2 -->
-                    <div class="w-40 flex flex-col items-center">
-                        <div class="w-24 h-24 bg-gray-800 rounded-full border-2 border-cinnamon-500 mb-4 overflow-hidden">
-                            <img src="https://ui-avatars.com/api/?name=Team+B&background=random" alt="Team 2" class="w-full h-full object-cover">
-                        </div>
-                        <h4 class="font-bold text-sm">Team Member 2</h4>
-                        <p class="text-xs text-gray-400">Role / Position</p>
-                    </div>
-                    <!-- Team Member 3 -->
-                    <div class="w-40 flex flex-col items-center">
-                        <div class="w-24 h-24 bg-gray-800 rounded-full border-2 border-cinnamon-500 mb-4 overflow-hidden">
-                            <img src="https://ui-avatars.com/api/?name=Team+C&background=random" alt="Team 3" class="w-full h-full object-cover">
-                        </div>
-                        <h4 class="font-bold text-sm">Team Member 3</h4>
-                        <p class="text-xs text-gray-400">Role / Position</p>
-                    </div>
+                    <div class="w-40 flex flex-col items-center"><div class="w-24 h-24 bg-gray-800 rounded-full border-2 border-cinnamon-500 mb-4 overflow-hidden"><img src="https://ui-avatars.com/api/?name=Team+A&background=random" alt="Chanif Musoffa" class="w-full h-full object-cover"></div><h4 class="font-bold text-sm">Team Member 1</h4><p class="text-xs text-gray-400">Role / Position</p></div>
+                    <div class="w-40 flex flex-col items-center"><div class="w-24 h-24 bg-gray-800 rounded-full border-2 border-cinnamon-500 mb-4 overflow-hidden"><img src="https://ui-avatars.com/api/?name=Team+B&background=random" alt="Yesarela Via Dolorosa R.R.P" class="w-full h-full object-cover"></div><h4 class="font-bold text-sm">Team Member 2</h4><p class="text-xs text-gray-400">Role / Position</p></div>
+                    <div class="w-40 flex flex-col items-center"><div class="w-24 h-24 bg-gray-800 rounded-full border-2 border-cinnamon-500 mb-4 overflow-hidden"><img src="https://ui-avatars.com/api/?name=Team+C&background=random" alt="Selvi Nur Azizah" class="w-full h-full object-cover"></div><h4 class="font-bold text-sm">Team Member 3</h4><p class="text-xs text-gray-400">Role / Position</p></div>
                 </div>
             </div>
         </section>
-
     </main>
 
     <script>
         const btn = document.getElementById('menu-btn');
         const sidebar = document.getElementById('sidebar');
-        
-        btn.addEventListener('click', () => {
-            sidebar.classList.toggle('-translate-x-full');
-        });
-
+        btn.addEventListener('click', () => { sidebar.classList.toggle('-translate-x-full'); });
         const links = sidebar.querySelectorAll('a');
-        links.forEach(link => {
-            link.addEventListener('click', () => {
-                if(window.innerWidth < 768) {
-                    sidebar.classList.add('-translate-x-full');
-                }
-            });
-        });
+        links.forEach(link => { link.addEventListener('click', () => { if(window.innerWidth < 768) { sidebar.classList.add('-translate-x-full'); } }); });
     </script>
 </body>
 </html>
